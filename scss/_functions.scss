@@ -1,0 +1,11 @@
+@use "sass:math";
+@import "variables";
+$font-size-base: 16px;
+
+@function rem($value) {
+  @return math.div($value, $font-size-base) * 1rem;
+}
+
+@function get-color($name) {
+  @return map-get($colors, $name);
+}

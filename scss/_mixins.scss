@@ -1,0 +1,19 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin box-shadow($x: 0, $y: 0, $blur: 10px, $color: rgba(0, 0, 0, 0.5)) {
+  box-shadow: $x $y $blur $color;
+}
+
+@mixin button($type) {
+  @if $type == "primary" {
+    background-color: get-color("primary");
+  } @else if $type == "secondary" {
+    background-color: get-color("secondary");
+  } @else {
+    background-color: get-color("danger");
+  }
+}

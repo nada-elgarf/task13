@@ -1,0 +1,23 @@
+@import "functions";
+@import "mixins";
+
+.button {
+  padding: rem(16px) rem(32px);
+  font-size: rem(16px);
+  @include button("primary");
+  color: #fff;
+  border: none;
+  border-radius: rem(4px);
+
+  &:hover {
+    background-color: darken(get-color("primary"), 10%);
+  }
+
+  &--secondary {
+    @include button("secondary");
+
+    &:hover {
+      background-color: darken(get-color("secondary"), 10%);
+    }
+  }
+}

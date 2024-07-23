@@ -1,0 +1,44 @@
+$spacing-unit: 16px;
+
+@for $i from 0 through 4 {
+  .p-#{$i} {
+    padding: $spacing-unit * $i;
+  }
+
+  .pt-#{$i} {
+    padding-top: $spacing-unit * $i;
+  }
+
+  .pr-#{$i} {
+    padding-right: $spacing-unit * $i;
+  }
+
+  .pb-#{$i} {
+    padding-bottom: $spacing-unit * $i;
+  }
+
+  .pl-#{$i} {
+    padding-left: $spacing-unit * $i;
+  }
+}
+@for $i from 0 through 4 {
+  .m-#{$i} {
+    margin: $spacing-unit * $i;
+  }
+
+  .mt-#{$i} {
+    margin-top: $spacing-unit * $i;
+  }
+
+  .mr-#{$i} {
+    margin-right: $spacing-unit * $i;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: $spacing-unit * $i;
+  }
+
+  .ml-#{$i} {
+    margin-left: $spacing-unit * $i;
+  }
+}
